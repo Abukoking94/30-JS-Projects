@@ -6,22 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-doListApp</title>
     <link rel="stylesheet" href="To-doListApp.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <Div class="container">
+    <div class="container">
 
         <div class="header">
-            <h1></h1>
-            <i></i>
+            <h1>To-Do List</h1>
+            <img src="png-transparent-checkmark-done-exam-list-pencil-todo-xomo-basics-icon-thumbnail.png" alt="">
         </div>
 
         <div class="addTask">
-            <input type="text">
-            <button></button>
+            <input type="text" placeholder="Add your task" class="taskAdd">
+            <button class="addBtn">Add</button>
         </div>
-    </Div>
+
+        <div class="task-list">
+            <li class="tasks checked"> Task 1</li>
+            <li class="tasks"> Task 2</li>
+            <li class="tasks"> Task 3</li>
+        </div>
+    </div>
 
     <script src="To-doListApp.js"></script>
 </body>
