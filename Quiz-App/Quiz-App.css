@@ -38,7 +38,7 @@
             font-weight: 500;
         }
 
-        .answers {
+        .answerBtn {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -60,7 +60,7 @@
             transition: 0.5s;
         }
 
-        .answer:hover {
+        .answer:hover:not([disabled]) {
             background-color: rgba(0, 0, 0, 0.123);
             color: white;
             font-size: 15px;
@@ -73,6 +73,7 @@
         }
 
         .nxtBtn {
+            /* display: block; */
             color: white;
             background-color: rgb(109, 229, 141);
             width: 95px;
@@ -82,8 +83,21 @@
             font-size: 15px;
             cursor: pointer;
             transition: 0.5s;
+            /* display: none; */
+
         }
 
         .nxtBtn:hover {
             background-color: rgb(89, 187, 115);
         }
+
+        .correct{
+            background: greenyellow;
+            color: black;
+        }
+
+        .incorrect{
+            background: red;
+            color: black;
+        }
+
